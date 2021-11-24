@@ -252,11 +252,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-and-methods" class="md-nav__link">
-    Class and Methods
+  <a href="#async-implementations" class="md-nav__link">
+    Async implementations
   </a>
   
-    <nav class="md-nav" aria-label="Class and Methods">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    Classes and Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -380,11 +387,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-and-methods" class="md-nav__link">
-    Class and Methods
+  <a href="#async-implementations" class="md-nav__link">
+    Async implementations
   </a>
   
-    <nav class="md-nav" aria-label="Class and Methods">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    Classes and Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -543,10 +557,26 @@
 
 
 <p><em>(This script is complete, it should run "as is")</em></p>
-<h2 id="class-and-methods">Class and Methods</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">MessageSerializer</span>
-    <span class="n">Args</span><span class="p">:</span>
-        <span class="n">schemaregistry_client</span> <span class="p">(</span><span class="n">schema_registry</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">SchemaRegistryClient</span><span class="p">):</span> <span class="n">Http</span> <span class="n">Client</span>
+<h2 id="async-implementations">Async implementations</h2>
+<p>Please note that <code>JsonMessageSerializer</code>, <code>AvroMessageSerializer</code> and <code>SchemaRegistryClient</code> have their asynchronous
+counterparts <code>AsyncJsonMessageSerializer</code>, <code>AsyncAvroMessageSerializer</code> and <code>AsyncSchemaRegistryClient</code> and all 
+examples above should work if you replace them with their async variations</p>
+<h2 id="classes-and-methods">Classes and Methods</h2>
+<div class="codehilite"><pre><span></span><code>AvroMessageSerializer
+    Args:
+        schemaregistry_client (schema_registry.client.SchemaRegistryClient): Http Client
+
+JsonMessageSerializer
+    Args:
+        schemaregistry_client (schema_registry.client.SchemaRegistryClient): Http Client
+
+AsyncAvroMessageSerializer
+    Args:
+        schemaregistry_client (schema_registry.client.AsyncSchemaRegistryClient): Http Client
+
+AsyncJsonMessageSerializer
+    Args:
+        schemaregistry_client (schema_registry.client.AsyncSchemaRegistryClient): Http Client
 </code></pre></div>
 
 
